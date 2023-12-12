@@ -8,7 +8,7 @@ namespace L10UkolSpravaVozidel
 {
     public class SpravceVozidel
     {
-        List<Vozidlo> vozidla = new List<Vozidlo>();
+        private List<Vozidlo> vozidla = new List<Vozidlo>();
 
         public void PridejAuto(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model)
         {
@@ -24,10 +24,27 @@ namespace L10UkolSpravaVozidel
 
         public void VypisVozidla()
         {
+            int x = 0;
             foreach (var item in vozidla)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(x + ": " + item);
+                x++;
             }
+        }
+
+        public Vozidlo VratVozidlo (int index)
+        {
+            return vozidla[index];
+        }
+
+        public void SmazVozidlo(Vozidlo vozidlo)
+        {
+            vozidla.Remove(vozidlo);
+        }
+
+        public void SmazVsechnaVozidla()
+        {
+            vozidla.Clear();
         }
     }
 }
