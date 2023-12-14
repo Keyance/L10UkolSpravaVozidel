@@ -37,7 +37,7 @@ namespace L10UkolSpravaVozidel
 
         public override string ToString()
         {
-            string text = $"{TypVozidla}\t{RokVyroby}\t{Barva}";
+            string text = $"{TypVozidla}\t{RokVyroby}\t{Barva}\t{Hmotnost} kg";
             return text;
         }
         public enum Velikost

@@ -35,7 +35,7 @@ namespace L10UkolSpravaVozidel
         public override string ToString()
         {
             string puvodni =  base.ToString();
-            string text = $"\t{TypMotocyklu}\t{PocetKol}";
+            string text = $"\t{TypMotocyklu}\t{PocetKol}\t{VelikostMotocyklu}";
             return puvodni + text ;
 
         }

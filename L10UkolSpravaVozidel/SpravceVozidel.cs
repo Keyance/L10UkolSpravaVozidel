@@ -13,12 +13,14 @@ namespace L10UkolSpravaVozidel
         public void PridejAuto(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model, int hmotnost)
         {
             Automobil automobil = new Automobil(typVozidla, rokVyroby, barva, pocetDveri, model, hmotnost);
+            automobil.VelikostAuta = Automobil.Velikost.Velky;
             vozidla.Add(automobil);
         }
 
         public void PridejMotorku(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol, int hmotnost)
         {
             Motocykl motocykl = new Motocykl(typVozidla, rokVyroby, barva, typMotocyklu, pocetKol, hmotnost);
+            motocykl.VelikostMotocyklu = Motocykl.Velikost.Velky;
             vozidla.Add(motocykl);
         }
 

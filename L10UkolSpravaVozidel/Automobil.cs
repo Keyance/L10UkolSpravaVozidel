@@ -33,7 +33,7 @@ namespace L10UkolSpravaVozidel
         public override string ToString()
         {
             string puvodni = base.ToString();
-            string text = $"\t{Model}\t{PocetDveri}";
+            string text = $"\t{Model}\t{PocetDveri}\t{VelikostAuta}";
             return puvodni + text;
 
         }
