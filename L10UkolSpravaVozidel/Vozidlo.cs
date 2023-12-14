@@ -39,5 +39,10 @@ namespace L10UkolSpravaVozidel
             string text = $"{TypVozidla}\t{RokVyroby}\t{Barva}";
             return text;
         }
+        public enum Velikost
+        {
+            Maly,
+            Velky
+        }
     }
 }

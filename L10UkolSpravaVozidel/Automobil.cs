@@ -19,8 +19,8 @@ namespace L10UkolSpravaVozidel
             {
                 if (Hmotnost < 400)
                 {
-                    velikostAuta = Velikost.MaleAuto;
-                } else { velikostAuta = Velikost.VelkeAuto; }
+                    velikostAuta = Velikost.Maly;
+                } else { velikostAuta = Velikost.Velky; }
             }
         }
 
@@ -36,11 +36,6 @@ namespace L10UkolSpravaVozidel
             string text = $"\t{Model}\t{PocetDveri}";
             return puvodni + text;
 
-        }
-        public enum Velikost
-        {
-            MaleAuto,
-            VelkeAuto
         }
     }
 }

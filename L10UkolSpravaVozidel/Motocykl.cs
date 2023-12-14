@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static L10UkolSpravaVozidel.Automobil;
 
 namespace L10UkolSpravaVozidel
 {
@@ -10,6 +11,20 @@ namespace L10UkolSpravaVozidel
     {
         private string TypMotocyklu;
         private int PocetKol;
+
+        private Velikost velikostMotocyklu;
+        public Velikost VelikostMotocyklu
+        {
+            get { return velikostMotocyklu; }
+            set
+            {
+                if (Hmotnost < 150)
+                {
+                    velikostMotocyklu = Velikost.Maly;
+                }
+                else { velikostMotocyklu = Velikost.Velky; }
+            }
+        }
 
         public Motocykl(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol) : base(typVozidla, rokVyroby, barva)
         {
