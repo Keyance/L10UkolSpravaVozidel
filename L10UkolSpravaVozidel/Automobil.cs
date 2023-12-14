@@ -11,6 +11,19 @@ namespace L10UkolSpravaVozidel
         private int PocetDveri;
         private string Model;
 
+        private Velikost velikostAuta;
+        public Velikost VelikostAuta
+        {
+            get { return velikostAuta; }
+            set
+            {
+                if (Hmotnost < 400)
+                {
+                    velikostAuta = Velikost.MaleAuto;
+                } else { velikostAuta = Velikost.VelkeAuto; }
+            }
+        }
+
         public Automobil(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model) : base(typVozidla, rokVyroby, barva)
         {
             PocetDveri = pocetDveri;
@@ -23,6 +36,11 @@ namespace L10UkolSpravaVozidel
             string text = $"\t{Model}\t{PocetDveri}";
             return puvodni + text;
 
+        }
+        public enum Velikost
+        {
+            MaleAuto,
+            VelkeAuto
         }
     }
 }

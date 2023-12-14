@@ -12,6 +12,21 @@ namespace L10UkolSpravaVozidel
         protected string RokVyroby;
         protected string Barva;
 
+        protected int hmotnost;
+        public int Hmotnost
+        {
+            get { return hmotnost; } set
+            {
+                if (value < 0)
+                {
+                    Console.WriteLine("Nesprávný input.");
+                } else
+                {
+                hmotnost = value;
+                }
+            }
+        }
+
         public Vozidlo(string typVozidla, string rokVyroby, string barva)
         {
             TypVozidla = typVozidla;
