@@ -27,11 +27,12 @@ namespace L10UkolSpravaVozidel
             }
         }
 
-        public Vozidlo(string typVozidla, string rokVyroby, string barva)
+        public Vozidlo(string typVozidla, string rokVyroby, string barva, int hmotnost)
         {
             TypVozidla = typVozidla;
             RokVyroby = rokVyroby;
             Barva = barva;
+            Hmotnost = hmotnost;
         }
 
         public override string ToString()

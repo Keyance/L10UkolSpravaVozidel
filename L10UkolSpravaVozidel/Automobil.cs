@@ -24,7 +24,7 @@ namespace L10UkolSpravaVozidel
             }
         }
 
-        public Automobil(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model) : base(typVozidla, rokVyroby, barva)
+        public Automobil(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model, int hmotnost) : base(typVozidla, rokVyroby, barva, hmotnost)
         {
             PocetDveri = pocetDveri;
             Model = model;

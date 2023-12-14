@@ -26,7 +26,7 @@ namespace L10UkolSpravaVozidel
             }
         }
 
-        public Motocykl(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol) : base(typVozidla, rokVyroby, barva)
+        public Motocykl(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol, int hmotnost) : base(typVozidla, rokVyroby, barva, hmotnost)
         {
             TypMotocyklu = typMotocyklu;
             PocetKol = pocetKol;

@@ -10,15 +10,15 @@ namespace L10UkolSpravaVozidel
     {
         private List<Vozidlo> vozidla = new List<Vozidlo>();
 
-        public void PridejAuto(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model)
+        public void PridejAuto(string typVozidla, string rokVyroby, string barva, int pocetDveri, string model, int hmotnost)
         {
-            Automobil automobil = new Automobil(typVozidla, rokVyroby, barva, pocetDveri, model);
+            Automobil automobil = new Automobil(typVozidla, rokVyroby, barva, pocetDveri, model, hmotnost);
             vozidla.Add(automobil);
         }
 
-        public void PridejMotorku(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol)
+        public void PridejMotorku(string typVozidla, string rokVyroby, string barva, string typMotocyklu, int pocetKol, int hmotnost)
         {
-            Motocykl motocykl = new Motocykl(typVozidla, rokVyroby, barva, typMotocyklu, pocetKol);
+            Motocykl motocykl = new Motocykl(typVozidla, rokVyroby, barva, typMotocyklu, pocetKol, hmotnost);
             vozidla.Add(motocykl);
         }
 
